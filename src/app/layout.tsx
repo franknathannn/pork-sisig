@@ -14,7 +14,7 @@ const playfair = Playfair_Display({
 });
 
 export const metadata = {
-  title: 'Authentic Pork Sisig | The Ultimate Filipino Delicacy',
+  title: 'Boss K Pork Sisig | The best Sizzling Sisig in Tondo',
   description: 'Experience the sizzling perfection of traditional pork sisig',
 };
 
