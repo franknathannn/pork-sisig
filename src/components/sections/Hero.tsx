@@ -38,6 +38,16 @@ export default function Hero() {
     }
   };
 
+  const scrollToAbout = () => {
+    const aboutElement = document.getElementById('about');
+    if (aboutElement) {
+      window.scrollTo({
+        top: aboutElement.offsetTop - 80,
+        behavior: 'smooth'
+      });
+    }
+  };
+
   return (
     <section id="hero" className="relative h-screen w-full overflow-hidden">
       {/* Animated Background with Texture */}
@@ -199,6 +209,7 @@ export default function Hero() {
               whileTap={{ scale: 0.98 }}
             >
               <Button
+                onClick={scrollToAbout}
                 variant="outline"
                 size="lg"
                 className="border-3 border-amber-500/70 bg-black/30 backdrop-blur-xl text-amber-100 hover:bg-amber-500/20 hover:border-amber-400 px-10 py-7 text-xl font-bold rounded-full shadow-xl shadow-amber-900/30 transition-all"

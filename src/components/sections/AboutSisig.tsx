@@ -6,9 +6,9 @@ import Image from 'next/image';
 
 export default function AboutSisig() {
   const stats = [
-    { icon: Award, label: 'Years of Tradition', value: '50+' },
-    { icon: Heart, label: 'Happy Customers', value: '100K+' },
-    { icon: Users, label: 'Daily Servings', value: '500+' },
+    { icon: Award, label: 'Years of Tradition', value: '3+' },
+    { icon: Heart, label: 'Happy Customers', value: '20K+' },
+    { icon: Users, label: 'Daily Servings', value: '200+' },
   ];
 
   return (
