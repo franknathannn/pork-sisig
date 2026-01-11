@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+@theme {
+  /* Custom sisig color palette */
+  --color-sisig-50: #FFF8F0;
+  --color-sisig-100: #FFE8D0;
+  --color-sisig-200: #FFD4A8;
+  --color-sisig-300: #DAA520;
+  --color-sisig-400: #C8941F;
+  --color-sisig-500: #8B4513;
+  --color-sisig-600: #6B3410;
+  --color-sisig-700: #4A240B;
+  --color-sisig-800: #DC143C;
+  --color-sisig-900: #8B0000;
+  
+  /* Custom animations */
+  --animate-sizzle: sizzle 2s ease-in-out infinite;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(24 24 27);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(63 63 70);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(113 113 122);
+}
+
+/* Smooth scroll behavior with better performance */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px; /* Offset for fixed headers */
+}
+
+/* Optimize scroll performance */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* Body defaults */
+body {
+  background-color: rgb(9 9 11);
+  color: rgb(250 250 250);
+  /* Enable GPU acceleration for smoother animations */
+  transform: translateZ(0);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom animation keyframes */
+@keyframes sizzle {
+  0%, 100% {
+    transform: scale(1) rotate(0deg);
+  }
+  25% {
+    transform: scale(1.05) rotate(1deg);
+  }
+  75% {
+    transform: scale(1.05) rotate(-1deg);
+  }
+}
